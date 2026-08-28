@@ -24,12 +24,26 @@ console.log(isPalindrome("racecar"));
 
 
 // 4. Sum Array Elements
-
 function sumArray(nums) {
     return nums.reduce((sum, num) => sum + num, 0);
 }
 
 console.log(sumArray([10, 20, 30, 40]));
+
+// 5. Count Vowels
+function countVowels(str) {
+    let count = 0;
+
+    for (let char of str) {
+        if ("aeiou".includes(char)) {
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(countVowels("javascript"));
+
 
 
 
