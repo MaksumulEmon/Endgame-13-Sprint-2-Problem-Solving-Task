@@ -15,3 +15,12 @@ function findMax(nums) {
 console.log(findMax([3, 7, 2, 9, 5]));
 
 
+// 3. Check for Palindrome
+function isPalindrome(str) {
+    return str === str.split("").reverse().join("");
+}
+
+console.log(isPalindrome("racecar"));
+
+
+
