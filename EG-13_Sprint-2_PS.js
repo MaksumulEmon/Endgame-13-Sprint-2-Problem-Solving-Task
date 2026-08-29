@@ -95,4 +95,13 @@ function lengthOfLongestSubstring(s) {
 }
 
 console.log(lengthOfLongestSubstring("abcabcbb"));
-// Output: 3
+
+
+// 10. Deep Clone an Object
+function deepClone(obj) {
+    return structuredClone(obj);
+}
+
+const original = { a: 1, b: { c: 2 } };
+const copy = deepClone(original);
+console.log(copy);
