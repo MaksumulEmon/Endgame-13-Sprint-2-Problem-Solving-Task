@@ -3,7 +3,7 @@ function reverseString(str) {
     return str.split("").reverse().join("");
 }
 
-console.log(reverseString("hello"));
+// console.log(reverseString("hello"));
 
 
 // 2. Find Maximum
@@ -12,7 +12,7 @@ function findMax(nums) {
     return Math.max(...nums);
 }
 
-console.log(findMax([3, 7, 2, 9, 5]));
+// console.log(findMax([3, 7, 2, 9, 5]));
 
 
 // 3. Check for Palindrome
@@ -20,7 +20,7 @@ function isPalindrome(str) {
     return str === str.split("").reverse().join("");
 }
 
-console.log(isPalindrome("racecar"));
+// console.log(isPalindrome("racecar"));
 
 
 // 4. Sum Array Elements
@@ -28,7 +28,7 @@ function sumArray(nums) {
     return nums.reduce((sum, num) => sum + num, 0);
 }
 
-console.log(sumArray([10, 20, 30, 40]));
+// console.log(sumArray([10, 20, 30, 40]));
 
 // 5. Count Vowels
 function countVowels(str) {
@@ -42,7 +42,7 @@ function countVowels(str) {
     return count;
 }
 
-console.log(countVowels("javascript"));
+// console.log(countVowels("javascript"));
 
 
 // 7. Flatten a Nested Array
@@ -50,7 +50,7 @@ function flattenArray(arr) {
     return arr.flat(Infinity);
 }
 
-console.log(flattenArray([1, [2, [3, 4], 5]]));
+// console.log(flattenArray([1, [2, [3, 4], 5]]));
 
 
 
@@ -70,7 +70,7 @@ function groupAnagrams(strs) {
     return Object.values(groups);
 }
 
-console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
+// console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
 
 
 
@@ -94,7 +94,7 @@ function lengthOfLongestSubstring(s) {
     return max;
 }
 
-console.log(lengthOfLongestSubstring("abcabcbb"));
+// console.log(lengthOfLongestSubstring("abcabcbb"));
 
 
 // 10. Deep Clone an Object
@@ -104,4 +104,5 @@ function deepClone(obj) {
 
 const original = { a: 1, b: { c: 2 } };
 const copy = deepClone(original);
-console.log(copy);
+
+// console.log(copy);
