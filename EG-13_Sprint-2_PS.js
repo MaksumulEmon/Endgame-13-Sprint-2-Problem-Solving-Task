@@ -44,8 +44,8 @@ function countVowels(str) {
 
 console.log(countVowels("javascript"));
 
-// 7. Flatten a Nested Array
 
+// 7. Flatten a Nested Array
 function flattenArray(arr) {
     return arr.flat(Infinity);
 }
@@ -55,4 +55,19 @@ console.log(flattenArray([1, [2, [3, 4], 5]]));
 
 
 
+// 8. Group Anagrams
+function groupAnagrams(strs) {
+    let groups = {};
 
+    for (let str of strs) {
+        let key = str.split("").sort().join("");
+
+        if (!groups[key]) {
+            groups[key] = [];
+        }
+        groups[key].push(str);
+    }
+    return Object.values(groups);
+}
+
+console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
